@@ -1,0 +1,4 @@
+programa = range(1, 101)
+
+for numero in sorted(programa, reverse=True):
+    print(numero)
