@@ -1,0 +1,10 @@
+def a():
+    b = int(input("Digite el año: "))
+
+    if (b % 4 == 0 and b % 100 != 0) or b % 400 == 0:
+        print(f"El año {b} es bisiesto ")
+    else:
+        print(f"El año {b} no es bisiesto")
+
+
+a()
