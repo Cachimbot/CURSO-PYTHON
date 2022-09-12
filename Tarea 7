@@ -1,0 +1,28 @@
+class alumno():
+
+    inombre = input("Cual es tu nombre: ")
+    inota = float(input("Cual es tu nota: "))
+
+    def datos(self, nombre = inombre, nota = inota):
+        self.nombre1 = nombre
+        self.nota1 = nota
+        print("Nombre:", self.nombre1)
+        print("Nota:", self.nota1)
+
+    def nota(self,nota = inota):
+        if 0 <= nota <= 10:
+            print(f"Usted a desaprobado con {nota}")
+            exit()
+
+        elif nota > 20 or nota < 0 :
+            print(f"{nota} es una nota no valida, vuelva a intentar")
+            exit()
+        else:
+            print(f"Usted a aprobado con {nota}")
+            exit()
+
+
+
+p = alumno()
+p.datos()
+p.nota()
