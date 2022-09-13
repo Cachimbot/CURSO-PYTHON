@@ -1,27 +1,38 @@
-class alumno():
 
-    inombre = input("Cual es tu nombre: ")
-    inota = float(input("Cual es tu nota: "))
+class Alumno():
 
+    def __init__(self):
 
-    def datos(self,nombre = inombre,nota = inota):
+        global nombre
+        global nota
+
+        nombre = input("Cual es tu nombre: ")
+        nota = int(input("Cual es tu nota: "))
+
+    def datos(self):
         print("Nombre:",nombre)
-        print("Nota:", nota)
+        print("Nota:",nota)
 
-
-    def nota(self,nota = inota):
+    def imprimirnota(self):
         if 0 <= nota <= 10:
             print(f"Usted a desaprobado con {nota}")
 
 
-        elif nota > 20 or nota < 0 :
+        elif nota > 20 or nota < 0:
             print(f"{nota} es una nota no valida, vuelva a intentar")
 
         else:
             print(f"Usted a aprobado con {nota}")
 
+d = Alumno()
+d.datos()
+d.imprimirnota()
 
-p = alumno()
-p.datos()
-p.nota()
+print()
+d = Alumno()
+d.datos()
+print()
 
+d = Alumno()
+d.imprimirnota()
+print()
