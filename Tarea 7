@@ -1,4 +1,3 @@
-
 class Alumno():
 
     def __init__(self):
@@ -7,7 +6,7 @@ class Alumno():
         global nota
 
         nombre = input("Cual es tu nombre: ")
-        nota = int(input("Cual es tu nota: "))
+        nota = float(input("Cual es tu nota: "))
 
     def datos(self):
         print("Nombre:",nombre)
@@ -27,11 +26,17 @@ class Alumno():
 d = Alumno()
 d.datos()
 d.imprimirnota()
-
 print()
+
 d = Alumno()
 d.datos()
 print()
+
+d = Alumno()
+d.imprimirnota()
+print()
+
+
 
 d = Alumno()
 d.imprimirnota()
