@@ -51,7 +51,7 @@ hoursString = [f'{i:02}:00:00' for i in range(25)]
 plt.xticks(range(0,25), hoursString,rotation=90)
 
 #======================================================
-#Definiendo nombres de ejes, guarda archivo.rango de los ejes.
+#Definiendo nombres de ejes, guarda archivo,rango de los ejes.
 #======================================================
 
 ax.set_xlim([0,24])
